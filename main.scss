@@ -1,0 +1,116 @@
+$purple: hsl(259, 100%, 65%);
+$ligh-red: hsl(0, 100%, 67%);
+$white: hsl(0, 0%, 100%);
+$off-white: hsl(0, 0%, 94%);
+$light-grey: hsl(0, 0%, 86%);
+$smokey-grey: hsl(0, 1%, 44%);
+$off-black: hsl(0, 0%, 8%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $off-white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    min-width: 750px;
+    max-width: 850px;
+    background-color: $white;
+    padding: 3.5rem 2.3rem;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 25%;
+}
+
+.form-inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-right: 10rem;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    &__label {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: $smokey-grey;
+        font-size: .9rem;
+    }
+
+    &__input {
+        font-size: 2rem;
+        padding: .8rem 1.2rem;
+        border-radius: 5px;
+        border: 1px solid $light-grey;
+        outline: none;
+        font-weight: 800;
+        font-family: inherit;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:focus {
+            border: 1px solid $purple;
+        }
+
+        &::-webkit-inner-spin-button {
+            display: none;
+          }
+    }
+}
+
+.separator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__line {
+        border-bottom: 1px solid $light-grey;
+        flex-grow: 2;
+    }
+
+    &__button {
+        border: none;
+        border-radius: 50%;
+        background-color: $purple;
+        padding: 1.4rem;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $off-black;
+        }
+    }
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    &__header {
+        line-height: 1em;
+        font-size: 6.7rem;
+        color: $off-black;
+        font-weight: 800;
+        font-style: italic;
+    }
+    span {
+        color: $purple;
+    }
+}
+

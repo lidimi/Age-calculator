@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <main class="main">
+    <form class="form">
+      <div class="form-inputs">
+      <div class="form-input">
+        <label class="form-input__label" for="day">day</label>
+        <input id="day" class="form-input__input" type="number" min="1" max="31" placeholder="DD" required>
+      </div>
+      <div class="form-input">
+        <label class="form-input__label" for="month">month</label>
+        <input id="month" class="form-input__input" type="number" min="1" max="12" placeholder="MM" required>
+      </div>
+      <div class="form-input">
+        <label class="form-input__label" for="year">year</label>
+        <input id="year" class="form-input__input" type="number" min="1900" max="2023" placeholder="YYYY" required>
+      </div>
+      </div>
+      <div class="separator">
+        <div class="separator__line"></div>
+        <button class="separator__button">
+          <img src="./assets/images/icon-arrow.svg" alt="submit">
+        </button>
+      </div>
+    </form>
+    <section class="results">
+      <h2 class="results__header">
+        <span class="results__years">--</span>
+        years
+      <h2>
+      <h2 class="results__header">
+        <span class="results__month">--</span>
+        months
+      </h2>
+      <h2 class="results__header">
+        <span class="results__days">--</span>
+        days
+      </h2>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
